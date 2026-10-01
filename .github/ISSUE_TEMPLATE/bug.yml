@@ -1,0 +1,35 @@
+name: Bug report
+description: Something does not work as documented
+labels: [bug, triage]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: Include the exact command and the full error output.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: Output of `remora doctor` (client and server) if available.
+      placeholder: |
+        Remora version:
+        Client OS:
+        Server OS, GPU, driver version:
+        CUDA version used by the application:
+        Network (LAN 1G/10G, VPN, internet):
+    validations:
+      required: true
+  - type: textarea
+    id: trace
+    attributes:
+      label: Trace / logs
+      description: "`remora trace` output or logs with `REMORA_LOG=debug`."

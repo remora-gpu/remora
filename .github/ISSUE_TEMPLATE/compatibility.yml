@@ -1,0 +1,25 @@
+name: Compatibility report
+description: An application or framework does not work (or works!) over Remora
+labels: [compatibility]
+body:
+  - type: input
+    id: app
+    attributes:
+      label: Application and version
+      placeholder: PyTorch 2.5.1, llama.cpp b4500, Blender 4.3 ...
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: Result
+      options: [Does not start, Crashes, Wrong results, Slow, Works]
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Steps to reproduce, unimplemented API names reported by Remora, environment.
+    validations:
+      required: true
