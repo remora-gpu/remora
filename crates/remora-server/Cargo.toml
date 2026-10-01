@@ -1,0 +1,17 @@
+[package]
+name = "remora-server"
+description = "Remora GPU server daemon: authentication, sessions, scheduling, quotas"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+authors.workspace = true
+publish.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+remora-proto.workspace = true
